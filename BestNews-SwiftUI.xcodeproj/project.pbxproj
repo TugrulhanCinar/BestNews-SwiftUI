@@ -13,15 +13,19 @@
 		9AFA9212289BBF1500DCC63F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA9211289BBF1500DCC63F /* Preview Assets.xcassets */; };
 		9AFA921B289BD6B300DCC63F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFA921A289BD6B300DCC63F /* LaunchScreen.storyboard */; };
 		9AFA9224289BDAFA00DCC63F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFA9223289BDAFA00DCC63F /* Alamofire */; };
+		AD64FC3DD04EFA31F8EF8A89 /* Pods_BestNews_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2CBE26E704DA09826405D1 /* Pods_BestNews_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2CBE26E704DA09826405D1 /* Pods_BestNews_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestNews_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969D42CAF8D0DDA6F8DBA1C6 /* Pods-BestNews-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestNews-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-BestNews-SwiftUI/Pods-BestNews-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		9AFA9207289BBF1300DCC63F /* BestNews-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BestNews-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFA920A289BBF1300DCC63F /* BestNews_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestNews_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9AFA920C289BBF1300DCC63F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AFA920E289BBF1500DCC63F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AFA9211289BBF1500DCC63F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AFA921A289BD6B300DCC63F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8E692E20CCB891000A8C889 /* Pods-BestNews-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestNews-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-BestNews-SwiftUI/Pods-BestNews-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +34,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AFA9224289BDAFA00DCC63F /* Alamofire in Frameworks */,
+				AD64FC3DD04EFA31F8EF8A89 /* Pods_BestNews_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309DD67A83CFA4F5FBE6D1D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E692E20CCB891000A8C889 /* Pods-BestNews-SwiftUI.debug.xcconfig */,
+				969D42CAF8D0DDA6F8DBA1C6 /* Pods-BestNews-SwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9AFA91FE289BBF1300DCC63F = {
 			isa = PBXGroup;
 			children = (
 				9AFA9209289BBF1300DCC63F /* BestNews-SwiftUI */,
 				9AFA9208289BBF1300DCC63F /* Products */,
+				309DD67A83CFA4F5FBE6D1D8 /* Pods */,
+				B992D073792FCFCE6138BD9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,14 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		B992D073792FCFCE6138BD9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D2CBE26E704DA09826405D1 /* Pods_BestNews_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AFA9215289BBF1500DCC63F /* Build configuration list for PBXNativeTarget "BestNews-SwiftUI" */;
 			buildPhases = (
+				DCC34922415669AC676F57AC /* [CP] Check Pods Manifest.lock */,
 				9AFA9203289BBF1300DCC63F /* Sources */,
 				9AFA9204289BBF1300DCC63F /* Frameworks */,
 				9AFA9205289BBF1300DCC63F /* Resources */,
@@ -199,6 +225,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCC34922415669AC676F57AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BestNews-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AFA9203289BBF1300DCC63F /* Sources */ = {
@@ -329,6 +380,7 @@
 		};
 		9AFA9216289BBF1500DCC63F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E692E20CCB891000A8C889 /* Pods-BestNews-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +410,7 @@
 		};
 		9AFA9217289BBF1500DCC63F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969D42CAF8D0DDA6F8DBA1C6 /* Pods-BestNews-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
