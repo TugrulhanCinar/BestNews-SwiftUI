@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSideBarOpened = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        SideMenu(isSidebarVisible: $isSideBarOpened)
     }
 }
 
